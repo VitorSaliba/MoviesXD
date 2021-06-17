@@ -126,11 +126,12 @@ function createVideoInfos(data, content){
     console.log('Videos: ', data);
 
     const iframeContainer = document.createElement('div');
-    const {title, overview, poster_path, homepage} = data;
+    const {title, overview, poster_path, homepage, vote_average} = data;
     const posterImg = `<img src="${baseUrlPhoto}${poster_path}">`
     content.insertAdjacentHTML( 'beforeend', posterImg);
     content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoTitle">Titulo: ${title}</p>`);
     content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoOverview"><strong>Sinopse:</strong> ${overview}</p>`);
+    content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoAvaliacao"><strong>Avaliação:</strong> ${vote_average}</p>`);
     content.insertAdjacentHTML( 'beforeend', `<a href="${homepage}" target="_blank" class="paragrafoHomepage">${homepage}</a>`);
 
     // for(let i = 0; i < length; i++){

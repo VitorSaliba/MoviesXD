@@ -129,7 +129,7 @@ function createVideoInfos(data, content){
     const {title, overview, poster_path, homepage, vote_average} = data;
     const posterImg = `<img src="${baseUrlPhoto}${poster_path}">`
     content.insertAdjacentHTML( 'beforeend', posterImg);
-    content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoTitle">Titulo: ${title}</p>`);
+    content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoTitle">${title}</p>`);
     content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoOverview"><strong>Sinopse:</strong> ${overview}</p>`);
     content.insertAdjacentHTML( 'beforeend', `<p class="paragrafoAvaliacao"><strong>Avaliação:</strong> ${vote_average}</p>`);
     content.insertAdjacentHTML( 'beforeend', `<a href="${homepage}" target="_blank" class="paragrafoHomepage">${homepage}</a>`);

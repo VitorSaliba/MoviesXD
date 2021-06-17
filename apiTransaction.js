@@ -5,7 +5,7 @@ const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 const url = 'https://api.themoviedb.org/3/search/movie?api_key=2f0e8537e29cc979d65a738d10c3d77f';
 
 function generateUrl(path){
-    const url = `https://api.themoviedb.org/3${path}?api_key=2f0e8537e29cc979d65a738d10c3d77f`;
+    const url = `https://api.themoviedb.org/3${path}?api_key=2f0e8537e29cc979d65a738d10c3d77f&language=pt-BR`;
     return url;
 }
 
